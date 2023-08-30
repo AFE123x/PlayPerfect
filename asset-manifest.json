@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PlayPerfect/static/css/main.4d4f5397.css",
+    "main.js": "/PlayPerfect/static/js/main.8407601a.js",
+    "static/js/845.08f23ee0.chunk.js": "/PlayPerfect/static/js/845.08f23ee0.chunk.js",
+    "static/js/787.a743e0dc.chunk.js": "/PlayPerfect/static/js/787.a743e0dc.chunk.js",
+    "static/media/beatclick.mp3": "/PlayPerfect/static/media/beatclick.54753e4b0414e9b2bab6.mp3",
+    "index.html": "/PlayPerfect/index.html",
+    "main.4d4f5397.css.map": "/PlayPerfect/static/css/main.4d4f5397.css.map",
+    "main.8407601a.js.map": "/PlayPerfect/static/js/main.8407601a.js.map",
+    "845.08f23ee0.chunk.js.map": "/PlayPerfect/static/js/845.08f23ee0.chunk.js.map",
+    "787.a743e0dc.chunk.js.map": "/PlayPerfect/static/js/787.a743e0dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d4f5397.css",
+    "static/js/main.8407601a.js"
+  ]
+}
