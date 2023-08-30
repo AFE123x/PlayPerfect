@@ -5,10 +5,7 @@ import Drone from "./Drone"
 import './App.css'
 function App() {
   useEffect(() => {
-    // Update the document title when the component mounts
     document.title = 'PlayPerfect';
-
-    // Clean up by resetting the document title when the component unmounts
     return () => {
       document.title = 'React App';
     };

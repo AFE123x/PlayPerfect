@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import useSound from "use-sound";
+import audioClip from "./beatclick.mp3";
 
 function Pomodoro() {
     const [mode, setMode] = useState('Choose mode');
     const [num, setNum] = useState(-1);
     const [isRunning, setIsRunning] = useState(false);
-    const [isBreak, setIsBreak] = useState(false); // Track if it's break time
+    const [isBreak, setIsBreak] = useState(false);
+    const [play, { stop }] = useSound(audioClip);
 
     const ToggleMode = () => {
         setNum(num + 1);
@@ -19,15 +22,15 @@ function Pomodoro() {
 
     const StartBreak = () => {
         setIsBreak(true);
-        setIsRunning(true); // Set running status when break starts
+        setIsRunning(true); 
     };
 
     const handleTime = () => {
         let currtime;
         if (isBreak) {
-            currtime = (num % 2 === 0) ? 5 * 60 : 10 * 60; // Break time in seconds
+            currtime = (num % 2 === 0) ? 5 * 60 : 10 * 60; 
         } else {
-            currtime = (num % 2 === 0) ? 25 * 60 : 50 * 60; // Session time in seconds
+            currtime = (num % 2 === 0) ? 25 * 60 : 50 * 60;
         }
 
         const endTime = Date.now() + currtime * 1000;
@@ -39,8 +42,10 @@ function Pomodoro() {
                 clearInterval(timerInterval);
                 if (!isBreak && num % 2 === 0) {
                     setMode("Break time!");
+                    play();
                     setTimeout(StartBreak, 1000);
                 } else {
+                    play();
                     setMode("Session Finished!");
                     setIsRunning(false);
                     setIsBreak(false);

@@ -38,10 +38,9 @@ function Metronome() {
             date1 = Date.now() + timefreq;
             play();
             sample++;
-            // const remainingtime = timefreq - drift
             timeoutRef.current = setTimeout(
                 runMet,
-                (timefreq) // Corrected parentheses
+                (timefreq)
             );
         }
     };
