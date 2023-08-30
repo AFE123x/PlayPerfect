@@ -1,0 +1,124 @@
+body{
+    background-color: #216869;
+}
+#Title{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.MetronomeContainer {
+    width:500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #D8315B;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Metronome {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mdisplay, .Mbuttons {
+    margin: 10px;
+}
+.TP, .TM{
+    background-color: #7FC6A4;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #7FC6A4;
+    font-size:30px;
+}
+.TM{
+    margin-left: 5px;
+}
+.TP{
+    margin-right: 5px;
+}
+#start{
+    background-color: #7FC6A4;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #7FC6A4;
+    font-size:30px;
+}
+button:hover{
+    background-color: #FFFAFF;
+    border-color: #FFFAFF;
+    
+}
+
+
+.PomodoroContainer{
+    background-color: #7FC6A4;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    display: grid;
+    margin:0 auto;
+    margin-top: 20px;
+}
+.PomodoroContainer button{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #7FC6A4;
+    border-radius: 10px;
+    height:60px;
+    border: solid;
+    border-color: #7FC6A4;
+    margin-bottom: -2px;
+}
+
+.PomodoroContainer h1,h3{
+    text-align: center;
+}
+.PomodoroContainer button:hover{
+    background-color: #D8315B;
+   
+}
+
+.DroneContainer{
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #FF9000;
+    display:grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+.DroneContainer p, h1,h3{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.DroneContainer button{
+    margin-bottom: 10px;
+    background-color: #FF9000;
+    border: solid;
+    border-color: #FF9000;
+    border-radius: 10px;
+    font-size: 20px;
+   
+}
+.DroneContainer button:hover{
+    background-color: #7FC6A4;
+}
+.DroneContainer #Freqsettt {
+    margin: 0 auto;
+}
